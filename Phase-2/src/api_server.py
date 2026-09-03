@@ -11,7 +11,7 @@ app = FastAPI(
 
 class GenerationRequest(BaseModel):
     prompt: str
-    model: str = "llama3.2"
+    model: str = "qwen2.5-coder:14b"
     temperature: float = 0.0
 
 class GenerationResponse(BaseModel):

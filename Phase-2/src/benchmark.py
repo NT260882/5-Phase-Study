@@ -61,4 +61,4 @@ def measure_inference(model_name: str, prompt: str):
 if __name__ == "__main__":
     test_prompt = "Write a concise, 100-word explanation of what an API gateway is."
     # Change model names based on your local Ollama pull list
-    measure_inference("llama3.2:latest", test_prompt)
+    measure_inference("qwen2.5-coder:14b", test_prompt)

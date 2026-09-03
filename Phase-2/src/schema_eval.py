@@ -15,7 +15,7 @@ You MUST respond with a valid JSON object matching this schema EXACTLY:
 
 Do not include markdown blocks, intro text, or conversational commentary. Output ONLY raw JSON."""
 
-def generate_structured_profile(user_input: str, model_name: str = "llama3.2", temperature: float = 0.0, max_retries: int = 2):
+def generate_structured_profile(user_input: str, model_name: str = "qwen2.5-coder:14b", temperature: float = 0.0, max_retries: int = 2):
     """
     Forces structured JSON output, validates it against a Pydantic schema,
     and runs a self-correction retry loop if parsing fails.
